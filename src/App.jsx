@@ -90,7 +90,10 @@ function App() {
 				<button disabled={isDisabled('last', page)} onClick={() => setPage(10)}>
 					Last
 				</button>
-        <div className="select__wrapper">
+        
+        
+			</div>
+      <div className="select__wrapper">
         <label htmlFor="id_select"> Results per page </label>
           <select id="id_select" autoFocus={true} value={itemsPerPage} onChange={modifyItemsPerPage}>
             <option value='5'>5</option>
@@ -98,8 +101,6 @@ function App() {
             <option value='15'>15</option>
           </select>
         </div>
-        
-			</div>
 		</div>
 	);
 }
